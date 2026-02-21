@@ -1,11 +1,22 @@
+import path from 'node:path'
 import { defineConfig } from 'vite'
+import { imagetools } from 'vite-imagetools'
 import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   plugins: [
     react(),
     tailwindcss(),
+    imagetools(),
   ],
+  server: {
+    host: true,
+  },
 })
