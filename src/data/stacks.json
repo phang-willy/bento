@@ -1,0 +1,131 @@
+{
+  "categories": [
+    {
+      "id": "frontend",
+      "label": "Frontend / CSS",
+      "stacks": [
+        { "id": "html", "name": "HTML", "icon": "SiHtml5" },
+        { "id": "css", "name": "CSS", "icon": "SiCss3" },
+        { "id": "tailwind", "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+        { "id": "bootstrap", "name": "Bootstrap", "icon": "SiBootstrap" }
+      ]
+    },
+    {
+      "id": "javascript",
+      "label": "JavaScript / TypeScript",
+      "stacks": [
+        { "id": "node", "name": "Node.js", "icon": "SiNodedotjs" },
+        { "id": "js", "name": "JavaScript", "icon": "SiJavascript" },
+        { "id": "ts", "name": "TypeScript", "icon": "SiTypescript" },
+        { "id": "react", "name": "React", "icon": "SiReact" },
+        { "id": "next", "name": "Next.js", "icon": "SiNextdotjs" },
+        { "id": "vue", "name": "Vue.js", "icon": "SiVuedotjs" },
+        { "id": "nuxt", "name": "Nuxt", "icon": "SiNuxtdotjs" }
+      ]
+    },
+    {
+      "id": "php",
+      "label": "PHP",
+      "stacks": [
+        { "id": "php", "name": "PHP", "icon": "SiPhp" },
+        { "id": "laravel", "name": "Laravel", "icon": "SiLaravel" },
+        { "id": "symfony", "name": "Symfony", "icon": "SiSymfony" },
+        { "id": "wordpress", "name": "WordPress", "icon": "SiWordpress" }
+      ]
+    },
+    {
+      "id": "devops",
+      "label": "DevOps",
+      "stacks": [
+        { "id": "docker", "name": "Docker", "icon": "SiDocker" }
+      ]
+    },
+    {
+      "id": "databases",
+      "label": "Bases de données & outils",
+      "stacks": [
+        { "id": "mysql", "name": "MySQL", "icon": "SiMysql" },
+        { "id": "postgresql", "name": "PostgreSQL", "icon": "SiPostgresql" },
+        { "id": "mongodb", "name": "MongoDB", "icon": "SiMongodb" },
+        { "id": "nestjs", "name": "NestJS", "icon": "SiNestjs" },
+        { "id": "phpmyadmin", "name": "phpMyAdmin", "icon": "SiPhpmyadmin" },
+        { "id": "adminer", "name": "Adminer", "icon": "SiAdminer" }
+      ]
+    },
+    {
+      "id": "systems",
+      "label": "Langages systèmes",
+      "stacks": [
+        { "id": "c", "name": "C", "icon": "SiC" },
+        { "id": "csharp", "name": "C#", "icon": "SiDotnet" },
+        { "id": "go", "name": "Go", "icon": "SiGo" }
+      ]
+    },
+    {
+      "id": "ide",
+      "label": "IDE",
+      "stacks": [
+        { "id": "vscode", "name": "VS Code", "icon": "VscVscode" },
+        { "id": "phpstorm", "name": "PhpStorm", "icon": "SiPhpstorm" }
+      ]
+    },
+    {
+      "id": "version-control",
+      "label": "Contrôle de version",
+      "stacks": [
+        { "id": "git", "name": "Git", "icon": "SiGit" },
+        { "id": "github", "name": "GitHub", "icon": "SiGithub" },
+        { "id": "gitlab", "name": "GitLab", "icon": "SiGitlab" }
+      ]
+    },
+    {
+      "id": "hosting",
+      "label": "Hébergement",
+      "stacks": [
+        { "id": "hostinger", "name": "Hostinger", "icon": "SiHostinger" },
+        { "id": "ovh", "name": "OVH", "icon": "SiOvh" },
+        { "id": "digitalocean", "name": "DigitalOcean", "icon": "SiDigitalocean" },
+        { "id": "githubpages", "name": "GitHub Pages", "icon": "SiGithubpages" },
+        { "id": "vercel", "name": "Vercel", "icon": "SiVercel" }
+      ]
+    },
+    {
+      "id": "project-management",
+      "label": "Gestion de projet",
+      "stacks": [
+        { "id": "trello", "name": "Trello", "icon": "SiTrello" },
+        { "id": "notion", "name": "Notion", "icon": "SiNotion" }
+      ]
+    },
+    {
+      "id": "design",
+      "label": "Design",
+      "stacks": [
+        { "id": "figma", "name": "Figma", "icon": "SiFigma" }
+      ]
+    },
+    {
+      "id": "os",
+      "label": "Systèmes d'exploitation",
+      "stacks": [
+        { "id": "linux", "name": "Linux", "icon": "SiLinux" },
+        { "id": "windows", "name": "Windows", "icon": "BsWindows" }
+      ]
+    },
+    {
+      "id": "productivity",
+      "label": "Productivité",
+      "stacks": [
+        { "id": "google", "name": "Google", "icon": "SiGoogle" },
+        { "id": "microsoft", "name": "Microsoft", "icon": "BsMicrosoft" }
+      ]
+    },
+    {
+      "id": "database-4d",
+      "label": "4D",
+      "stacks": [
+        { "id": "4d", "name": "4D", "icon": "Si4D" }
+      ]
+    }
+  ]
+}
