@@ -6,8 +6,8 @@ import Map from "@/components/ui/Map";
 
 function Personnal() {
   return (
-    <div className="flex flex-col gap-8 xl:gap-12">
-      <div className="flex flex-col justify-center items-start gap-8 xl:justify-start xl:gap-8 xl:flex-row xl:items-stretch">
+    <section className="flex flex-col gap-8 xl:gap-12 px-4 py-6">
+      <article className="flex flex-col justify-center items-start gap-8 xl:justify-start xl:gap-8 xl:flex-row xl:items-stretch">
         <Image
           srcSet={profile}
           sizes="(max-width: 768px) 256px, (max-width: 1580px) 512px, 768px"
@@ -23,8 +23,8 @@ function Personnal() {
             <p>Disponible à Paris et en Ile-de-France</p>
           </div>
         </div>
-      </div>
-      <div>
+      </article>
+      <article>
         <Map
           center={[48.8544, 2.3471]}
           zoom={11}
@@ -34,9 +34,9 @@ function Personnal() {
           className="rounded-lg overflow-hidden card p-4 xl:max-w-3/4"
           aria-label="Disponible à Paris et en Ile-de-France"
         />
-      </div>
-      <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-bold">Liens utiles :</h2>
+      </article>
+      <article className="flex flex-col gap-4">
+        <h1 className="text-2xl font-bold sticky top-(--sticky-top) pb-4 pt-6 bg-white dark:bg-gray-950 xl:top-auto xl:bg-none xl:dark:bg-none">Liens utiles :</h1>
         <div className="grid grid-cols-12 gap-4">
           <ContactLink
             href="https://github.com/phang-willy"
@@ -63,8 +63,8 @@ function Personnal() {
             icon={<BsEnvelopeFill />}
           />
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
 

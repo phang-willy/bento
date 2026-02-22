@@ -2,7 +2,6 @@
 
 @import "tailwindcss";
 
-/* Dark mode basé sur la classe .dark (light/dark/system) */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -28,7 +27,7 @@
 
 @layer base {
   #root {
-    @apply flex flex-col min-h-screen h-full;
+    @apply flex flex-col min-h-screen;
   }
 
   body {
@@ -38,7 +37,7 @@
 
 @layer components {
   .max-width-container {
-    @apply max-w-7xl mx-auto px-4 py-6 w-full h-full;
+    @apply max-w-7xl mx-auto w-full h-full;
   }
 
   .card {
