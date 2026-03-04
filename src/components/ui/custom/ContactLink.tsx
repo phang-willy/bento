@@ -17,11 +17,11 @@ function ContactLink({ href, username, where, "aria-label": ariaLabel, icon }: C
       rel="noopener noreferrer"
       title={`${where} : ${username}`}
       aria-label={ariaLabel}
-      className="card p-4 flex items-center justify-center w-full h-full hover:text-main focus-visible:text-main cursor-pointer col-span-6 xl:col-span-2"
+      className="card p-4 flex items-center justify-center w-full h-full hover:text-main focus-visible:text-main cursor-pointer col-span-6 xl:col-span-3"
     >
       <div className="flex flex-col items-center justify-center gap-4">
         <span className="text-2xl">{icon}</span>
-        <span className="text-sm flex items-center gap-2 xl:sr-only"><span>{`${where}`}</span> <GoLinkExternal /></span>
+        <span className="text-sm flex items-center gap-2"><span>{`${where}`}</span> <GoLinkExternal /></span>
       </div>
     </a>
   );

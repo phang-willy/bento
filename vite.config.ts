@@ -1,4 +1,4 @@
-import path from 'node:path'
+import path from 'path'
 import { defineConfig } from 'vite'
 import { imagetools } from 'vite-imagetools'
 import react from '@vitejs/plugin-react-swc'

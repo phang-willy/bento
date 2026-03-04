@@ -1,6 +1,6 @@
 import type { Project } from "@/types/Projects";
-import Badge from "@/components/ui/Badge";
-import Section from "@/components/ui/Section";
+import Badge from "@/components/ui/custom/Badge";
+import Section from "@/components/ui/custom/Section";
 import { formatDate } from "@/utils/formatDate";
 import projectsData from "@/data/projects.json";
 
