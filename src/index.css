@@ -43,4 +43,14 @@
   .card {
     @apply rounded-lg shadow-md border border-gray-200 dark:border-gray-700 dark:bg-gray-900;
   }
+
+  .dark,
+  .dark * {
+    .leaflet-layer,
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out,
+    .leaflet-bottom.leaflet-right .leaflet-control-zoom-in.leaflet-control{
+      filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    }
+  }
 }

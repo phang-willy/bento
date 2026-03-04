@@ -12,9 +12,10 @@ function Main() {
       ref={mainRef}
       id="main"
       className="max-width-container z-0 flex-1"
-      style={
-        { "--sticky-top": `calc(${stickyTop}px - 2px)` } as React.CSSProperties
-      }
+      style={{
+        "--sticky-top": `${stickyTop}px`,
+        "--sticky-top-title": `calc(${stickyTop}px - 1px)`
+      } as React.CSSProperties}
     >
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-4 w-full">
         <div className="xl:sticky xl:top-(--sticky-top) xl:self-start xl:h-fit">

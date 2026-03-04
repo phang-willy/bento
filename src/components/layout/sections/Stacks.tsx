@@ -48,7 +48,8 @@ import {
 
 import { VscVscode } from "react-icons/vsc";
 
-import Section from "./Section";
+import type { StacksData } from "@/types/Stacks";
+import Section from "@/components/ui/Section";
 import stacksData from "@/data/stacks.json";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -97,10 +98,6 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   BsMicrosoft,
 };
 
-type Stack = { id: string; name: string; icon: string };
-type Category = { id: string; label: string; stacks: Stack[] };
-type StacksData = { categories: Category[] };
-
 function Stacks() {
   const { categories } = stacksData as StacksData;
 
@@ -111,8 +108,8 @@ function Stacks() {
         if (stacks.length === 0) return null;
 
         return (
-          <div key={category.id} className="flex flex-col gap-3">
-            <h2 className="text-lg font-semibold text-gray-600 dark:text-gray-400">
+          <div key={category.id} className="flex flex-col gap-3 p-4">
+            <h2 className="text-lg font-semibold">
               {category.label}
             </h2>
             <div className="grid grid-cols-12 gap-4">

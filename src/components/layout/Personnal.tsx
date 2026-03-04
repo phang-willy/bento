@@ -6,8 +6,8 @@ import Map from "@/components/ui/Map";
 
 function Personnal() {
   return (
-    <section className="flex flex-col gap-8 xl:gap-12 px-4 py-6">
-      <article className="flex flex-col justify-center items-start gap-8 xl:justify-start xl:gap-8 xl:flex-row xl:items-stretch">
+    <section className="flex flex-col gap-8 xl:gap-12">
+      <article className="flex flex-col justify-center items-start gap-8 xl:justify-start xl:gap-8 xl:flex-row xl:items-stretch p-4">
         <Image
           srcSet={profile}
           sizes="(max-width: 768px) 256px, (max-width: 1580px) 512px, 768px"
@@ -24,7 +24,7 @@ function Personnal() {
           </div>
         </div>
       </article>
-      <article>
+      <article className="p-4">
         <Map
           center={[48.8544, 2.3471]}
           zoom={11}
@@ -35,30 +35,34 @@ function Personnal() {
           aria-label="Disponible à Paris et en Ile-de-France"
         />
       </article>
-      <article className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold sticky top-(--sticky-top) pb-4 pt-6 bg-white dark:bg-gray-950 xl:top-auto xl:bg-none xl:dark:bg-none">Liens utiles :</h1>
+      <article className="flex flex-col gap-4 p-4">
+        <h1 className="text-2xl font-bold sticky top-(--sticky-top-title) py-4 bg-white dark:bg-gray-950 xl:top-auto">Liens utiles :</h1>
         <div className="grid grid-cols-12 gap-4">
           <ContactLink
             href="https://github.com/phang-willy"
-            title="GitHub : phang-willy"
+            username="phang-willy"
             aria-label="Ouvrir le profil GitHub de PHANG Willy"
+            where="Github"
             icon={<BsGithub />}
           />
           <ContactLink
             href="https://linkedin.com/in/phang-willy"
-            title="LinkedIn : phang-willy"
+            username="phang-willy"
             aria-label="Ouvrir le profil LinkedIn de PHANG Willy"
+            where="LinkedIn"
             icon={<BsLinkedin />}
           />
           <ContactLink
             href="#"
-            title="CV"
+            username="CV PHANG Willy"
             aria-label="Ouvrir le CV de PHANG Willy"
+            where="CV"
             icon={<BsFileEarmarkPdfFill />}
           />
           <ContactLink
             href="mailto:pro.phang.willy@gmail.com"
-            title="Email : pro.phang.willy@gmail.com"
+            username="pro.phang.willy@gmail.com"
+            where="Email"
             aria-label="Envoyer un email à PHANG Willy"
             icon={<BsEnvelopeFill />}
           />
