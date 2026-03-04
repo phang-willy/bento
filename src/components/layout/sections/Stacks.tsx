@@ -49,7 +49,7 @@ import {
 import { VscVscode } from "react-icons/vsc";
 
 import type { StacksData } from "@/types/Stacks";
-import Section from "@/components/ui/Section";
+import Section from "@/components/ui/custom/Section";
 import stacksData from "@/data/stacks.json";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -122,15 +122,14 @@ function Stacks() {
                     key={stack.id}
                     role="img"
                     aria-label={stack.name}
-                    className="card p-4 flex items-center justify-center hover:text-main col-span-6 xl:col-span-2"
-                    title={stack.name}
+                    className="card p-4 flex items-center justify-center hover:text-main col-span-6 xl:col-span-3"
                   >
                     <div className="flex flex-col items-center justify-center gap-4">
                       <Icon
                         aria-hidden
                         className="text-2xl"
                       />
-                      <span className="text-xs xl:sr-only">{stack.name}</span>
+                      <span className="text-xs">{stack.name}</span>
                     </div>
                   </article>
                 );

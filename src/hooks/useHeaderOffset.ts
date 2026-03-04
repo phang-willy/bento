@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 
-export function useStickyTop(mainRef: React.RefObject<HTMLElement | null>) {
-  const [stickyTop, setStickyTop] = useState(24);
+export function useHeaderOffset(mainRef: React.RefObject<HTMLElement | null>) {
+  const [headerOffset, setHeaderOffset] = useState(24);
 
   useEffect(() => {
-    const updateStickyTop = () => {
+    const updateHeaderOffset = () => {
       const header = document.getElementById("header");
       const main = mainRef.current;
       if (!header || !main) return;
 
       const headerHeight = header.offsetHeight;
       const mainPaddingTop = parseFloat(getComputedStyle(main).paddingTop) || 0;
-      setStickyTop(headerHeight + mainPaddingTop);
+      setHeaderOffset(headerHeight + mainPaddingTop);
     };
 
-    updateStickyTop();
+    updateHeaderOffset();
 
-    const resizeObserver = new ResizeObserver(updateStickyTop);
+    const resizeObserver = new ResizeObserver(updateHeaderOffset);
     const header = document.getElementById("header");
     const main = mainRef.current;
     if (header) resizeObserver.observe(header);
@@ -25,5 +25,5 @@ export function useStickyTop(mainRef: React.RefObject<HTMLElement | null>) {
     return () => resizeObserver.disconnect();
   }, [mainRef]);
 
-  return stickyTop;
+  return headerOffset;
 }

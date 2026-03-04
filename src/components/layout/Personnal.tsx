@@ -1,8 +1,8 @@
 import { BsEnvelopeFill, BsFileEarmarkPdfFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import profile from "@/assets/profile.webp?w=256;512;768&format=webp&as=srcset";
-import ContactLink from "@/components/ui/ContactLink";
-import Image from "@/components/ui/Image";
-import Map from "@/components/ui/Map";
+import ContactLink from "@/components/ui/custom/ContactLink";
+import Image from "@/components/ui/custom/Image";
+import Map from "@/components/ui/custom/Map";
 
 function Personnal() {
   return (
@@ -12,7 +12,7 @@ function Personnal() {
           srcSet={profile}
           sizes="(max-width: 768px) 256px, (max-width: 1580px) 512px, 768px"
           alt="Photo de PHANG Willy"
-          className="rounded-full max-w-32 max-h-32 object-cover w-full h-full border-8 border-main"
+          className="rounded-full max-w-32 max-h-32 object-cover w-full h-full border-8 border-main bg-main"
         />
         <div className="flex flex-col gap-2 xl:gap-4">
           <h1 className="text-4xl font-bold xl:text-6xl">
@@ -24,19 +24,27 @@ function Personnal() {
           </div>
         </div>
       </article>
-      <article className="p-4">
-        <Map
-          center={[48.8544, 2.3471]}
-          zoom={11}
-          markers={[
-            { position: [48.8544, 2.3471], popup: "Disponible à Paris et en Ile-de-France" },
-          ]}
-          className="rounded-lg overflow-hidden card p-4 xl:max-w-3/4"
-          aria-label="Disponible à Paris et en Ile-de-France"
-        />
+      <article className="flex flex-col gap-4 p-4">
+        <h2 className="text-2xl font-bold">Où me trouver :</h2>
+        <div className="grid grid-cols-12 gap-4">
+          <Map
+            center={[48.8544, 2.3471]}
+            zoom={11}
+            markers={
+              [
+                { 
+                  position: [48.8544, 2.3471],
+                  popup: "Disponible à Paris et en Ile-de-France"
+                },
+              ]
+            }
+            className="rounded-lg overflow-hidden card p-4 col-span-12 xl:col-span-6"
+            aria-label="Disponible à Paris et en Ile-de-France"
+          />
+        </div>
       </article>
       <article className="flex flex-col gap-4 p-4">
-        <h1 className="text-2xl font-bold sticky top-(--sticky-top-title) py-4 bg-white dark:bg-gray-950 xl:top-auto">Liens utiles :</h1>
+        <h1 className="text-2xl font-bold sticky top-0 py-4 bg-background xl:top-auto">Liens utiles :</h1>
         <div className="grid grid-cols-12 gap-4">
           <ContactLink
             href="https://github.com/phang-willy"
@@ -54,7 +62,7 @@ function Personnal() {
           />
           <ContactLink
             href="#"
-            username="CV PHANG Willy"
+            username="PHANG Willy"
             aria-label="Ouvrir le CV de PHANG Willy"
             where="CV"
             icon={<BsFileEarmarkPdfFill />}
